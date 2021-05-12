@@ -1,0 +1,427 @@
+* {
+    margin: 0 0;
+    font-family: 'Caveat', cursive;
+    font-size: large;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-right: 5%;
+    margin-left: 25%;
+}
+
+.row::after {
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+i {
+    color: black;
+    font-size: 24px;
+}
+
+i:hover {
+    color: gray;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    background-color: gray;
+    height: 100%;
+}
+
+#main-menu {
+    position: fixed;
+    top: 0;
+    left: 50px;
+    /* width: 220px; */
+    width: 11%;
+    background-color: rgba(128, 128, 128, 0.226);
+    height: 100%;
+}
+
+#main-menu p {
+    text-align: center;
+    line-height: 40px;
+}
+
+#main-menu p a {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    line-height: 40px;
+    display: block;
+}
+
+#main-menu>p>a:hover {
+    background-color: darkgrey;
+    color: white;
+}
+
+#social {
+    text-align: center;
+}
+
+#social a {
+    padding: 8px 0;
+    line-height: 25px;
+    text-align: center;
+}
+
+#main-photo {
+    height: 30%;
+}
+
+.box {
+    float: left;
+    width: 33.333333333%;
+}
+
+.height1 {
+    height: 520px;
+}
+
+.height2 {
+    height: 550px;
+}
+
+#next {
+    margin: 0 auto;
+    text-align: center;
+    height: 50px;
+}
+
+#next a {
+    line-height: 50px;
+    text-decoration: none;
+    font-size: medium;
+    color: black;
+    padding: 8px 17px;
+}
+
+#next a:hover,
+.active {
+    background-color: black;
+    color: white;
+}
+
+#next #first {
+    color: white;
+}
+
+#about {
+    width: 100%;
+    background-color: rgb(65, 65, 65);
+    text-align: center;
+}
+
+#about h2,
+h5,
+h4 {
+    line-height: 50px;
+    text-transform: capitalize;
+    color: white;
+    font-size: 1.4em;
+}
+
+#about img {
+    width: 50%;
+    height: auto;
+}
+
+#about #text {
+    width: 50%;
+    text-align: justify;
+    margin: 30px auto;
+    font-size: large;
+    color: rgba(245, 245, 245, 0.89);
+}
+
+#about #text p {
+    word-spacing: 3px;
+    line-height: 30px;
+    margin: 15px auto;
+}
+
+#about #skills {
+    width: 50%;
+    margin: 30px auto;
+    text-align: left;
+    font-size: large;
+    color: rgba(245, 245, 245, 0.89);
+}
+
+#about #skills p {
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+#about #skills button {
+    padding: 12px 24px;
+    font-size: large;
+    border: 0;
+}
+
+#about #skills button:hover {
+    background-color: darkgray;
+}
+
+#about #charge {
+    width: 50%;
+    margin: 10px auto;
+    text-align: left;
+    font-size: large;
+    display: flex;
+}
+
+#about #charge div {
+    flex: 1;
+}
+
+table {
+    border: 0px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    padding: 30px;
+    font-size: 1.5em;
+    background-color: black;
+    color: darkgray;
+}
+
+td {
+    padding: 15px;
+}
+
+th,
+td {
+    width: 1%;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+#table1,
+#table2 {
+    display: inline-block;
+    background-color: darkgrey;
+    table-layout: auto;
+}
+
+#table1 h2 {
+    color: black;
+}
+
+#table2 h2 {
+    color: black;
+}
+
+table button {
+    padding: 12px 24px;
+    border: 0;
+    background-color: gray;
+    font-size: 1em;
+}
+
+table button:hover {
+    background-color: rgba(133, 133, 133, 0.479);
+}
+
+th:hover {
+    color: white;
+}
+
+#table1:hover,
+#table2:hover {
+    background-color: whitesmoke;
+}
+
+#last {
+    background-color: rgb(200, 200, 200);
+}
+
+#contact {
+    background-color: rgb(221, 221, 221);
+    width: 100%;
+}
+
+#main-contact {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    text-align: justify;
+    background-color: rgb(221, 221, 221);
+}
+
+form {
+    width: 100%;
+    display: inline-block;
+}
+
+#main-contact input {
+    width: 100%;
+    padding: 8px 0;
+    margin: 15px auto;
+    font-size: medium;
+}
+
+#main-contact button {
+    width: 100%;
+    margin: 15px auto;
+    color: white;
+    background-color: black;
+    padding: 10px 0;
+    font-size: medium;
+}
+
+#main-contact h2 {
+    text-align: center;
+    line-height: 50px;
+}
+
+#main-contact h3 {
+    text-transform: capitalize;
+}
+
+footer {
+    background-color: rgb(121, 121, 121);
+    height: 400px;
+    padding: 50px 24px;
+}
+
+.box-footer {
+    float: left;
+    width: 33.333333333%;
+    height: 300px;
+    padding: 20px 0;
+}
+
+footer h2 {
+    margin: 15px 0;
+}
+
+footer #box2 img {
+    width: 50px;
+    height: 50px;
+}
+
+footer #box2>h4 {
+    width: 50px;
+}
+
+footer #box3 p {
+    display: inline-block;
+    padding: 3px;
+    background-color: rgb(75, 74, 74);
+    color: white;
+    margin: 5px;
+}
+
+#image,
+#image2 {
+    position: relative;
+    padding: 10px 0;
+}
+
+#image>h4,
+#image2>h4 {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 80px;
+}
+
+#image>p,
+#image2>p {
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+}
+
+#black {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.box-first {
+    width: 100%;
+    background-color: darkgray;
+    margin: 20px auto;
+}
+
+.box-second {
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width:1000px) {
+    #main-menu,
+    #menu {
+        display: none;
+        position: absolute;
+        width: 0;
+    }
+    #container {
+        width: 100%;
+        margin: 0;
+    }
+    #main-contact {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #about #charge {
+        width: 80%;
+    }
+    #about #text,
+    #about #skills {
+        margin: 20px auto;
+    }
+    footer {
+        height: 700px;
+        padding: 20px 24px;
+    }
+    footer #box1,
+    footer #box2,
+    footer #box3 {
+        width: 100%;
+        height: 220px;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    table,
+    #about #skills,
+    .box,
+    #about img,
+    #about #text,
+    #about #skills button {
+        width: 100%;
+    }
+    #about #text,
+    #about #skills {
+        padding: 0 10px;
+    }
+    #about #charge {
+        flex-direction: column;
+    }
+}
