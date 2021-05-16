@@ -174,21 +174,22 @@ h4 {
     height: auto;
 }
 
-#about #text {
+.about-text {
     width: 50%;
     text-align: justify;
-    margin: 30px auto;
+    margin: 2.5rem auto;
+    padding: 1rem;
     font-size: large;
     color: rgba(245, 245, 245, 0.89);
 }
 
-#about #text p {
+.about-text p {
     word-spacing: 3px;
-    line-height: 30px;
+    line-height: 1.8rem;
     margin: 15px auto;
 }
 
-#about #skills {
+.skills__container {
     width: 50%;
     margin: 30px auto;
     text-align: left;
@@ -196,22 +197,23 @@ h4 {
     color: rgba(245, 245, 245, 0.89);
 }
 
-#about #skills p {
+.skills__container p {
     text-transform: capitalize;
     letter-spacing: 3px;
 }
 
-#about #skills button {
+.skills__container button {
     padding: 12px 24px;
     font-size: large;
     border: 0;
 }
 
-#about #skills button:hover {
+.skills__container button:hover {
     background-color: darkgray;
 }
 
-#about #charge {
+
+/* #about #charge {
     width: 50%;
     margin: 10px auto;
     text-align: left;
@@ -221,7 +223,7 @@ h4 {
 
 #about #charge div {
     flex: 1;
-}
+} */
 
 table {
     border: 0px;
@@ -247,13 +249,6 @@ td {
     border: 1px solid gray;
 }
 
-#table1,
-#table2 {
-    display: inline-block;
-    background-color: darkgrey;
-    table-layout: auto;
-}
-
 #table1 h2 {
     color: black;
 }
@@ -262,15 +257,20 @@ td {
     color: black;
 }
 
-table button {
+.signUpBtn {
     padding: 12px 24px;
     border: 0;
     background-color: gray;
-    font-size: 1em;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-table button:hover {
+.signUpBtn:hover {
     background-color: rgba(133, 133, 133, 0.479);
+}
+
+.charge-header {
+    margin: 1.5rem;
 }
 
 th:hover {
@@ -280,6 +280,20 @@ th:hover {
 #table1:hover,
 #table2:hover {
     background-color: whitesmoke;
+}
+
+.price-tables {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.price-table {
+    width: 70%;
+    background-color: darkgrey;
+    table-layout: auto;
 }
 
 #last {
@@ -304,25 +318,39 @@ form {
     display: inline-block;
 }
 
-#main-contact input {
-    width: 100%;
-    padding: 8px 0;
-    margin: 15px auto;
-    font-size: medium;
+input:focus,
+textarea:focus {
+    outline: none;
 }
 
-#main-contact button {
+#main-contact input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 15px auto;
+    font-size: medium;
+    border: 0;
+}
+
+.sendMessageBtn {
     width: 100%;
     margin: 15px auto;
     color: white;
     background-color: black;
     padding: 10px 0;
     font-size: medium;
+    border: 0;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    height: 10rem;
+    border: 0;
 }
 
 #main-contact h2 {
     text-align: center;
-    line-height: 50px;
+    line-height: 3rem;
 }
 
 #main-contact h3 {
@@ -429,11 +457,13 @@ img {
         width: 80%;
         margin: 0 auto;
     }
-    #about #charge {
+    .price-tables,
+    .skills__container,
+    .about-text {
         width: 80%;
     }
-    #about #text,
-    #about #skills {
+    .about-text,
+    .skills__container {
         margin: 20px auto;
     }
     footer {
@@ -449,19 +479,27 @@ img {
     }
 }
 
-@media(max-width:768px) {}
+@media(max-width:768px) {
+    .skills__container {
+        width: 80% !important;
+    }
+    .price-tables {
+        width: 90%;
+    }
+}
 
 @media(max-width:576px) {
     table,
-    #about #skills,
+    .skills__container,
     .box,
     #about img,
-    #about #text,
-    #about #skills button {
+    .about-text,
+    .skills__container button,
+    .price-tables {
         width: 100%;
     }
-    #about #text,
-    #about #skills {
+    .about-text,
+    .skills__container {
         padding: 0 10px;
     }
     #about #charge {
