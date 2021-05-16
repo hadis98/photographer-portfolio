@@ -348,7 +348,6 @@ textarea {
 
 footer {
     background-color: rgb(121, 121, 121);
-    /* height: 400px; */
     padding: 50px 24px;
 }
 
@@ -440,6 +439,15 @@ img {
     .price-table {
         width: 100%;
     }
+    .about-text,
+    .skills__container,
+    #main-contact {
+        width: 80%;
+    }
+    .height2,
+    .height1 {
+        height: 400px;
+    }
 }
 
 @media(max-width:992px) {
@@ -484,6 +492,10 @@ img {
     .price-table {
         margin: 0;
     }
+    .height2,
+    .height1 {
+        height: 350px;
+    }
 }
 
 @media(max-width:576px) {
@@ -501,14 +513,14 @@ img {
         width: 80%;
         margin-top: 1rem;
     }
-    /* .about-text,
-    .skills__container {
-        padding: 0 10px;
-    } */
     #about #charge {
         flex-direction: column;
     }
     .resumeBtn {
         font-size: 1rem;
+    }
+    .height2,
+    .height1 {
+        height: 500px;
     }
 }
