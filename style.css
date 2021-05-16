@@ -359,14 +359,14 @@ textarea {
 
 footer {
     background-color: rgb(121, 121, 121);
-    height: 400px;
+    /* height: 400px; */
     padding: 50px 24px;
 }
 
 .box-footer {
     float: left;
     width: 33.333333333%;
-    height: 300px;
+    /* height: 300px; */
     padding: 20px 0;
 }
 
@@ -374,13 +374,21 @@ footer h2 {
     margin: 15px 0;
 }
 
+
+/* 
 footer #box2 img {
     width: 50px;
     height: 50px;
-}
+} */
 
 footer #box2>h4 {
     width: 50px;
+}
+
+#box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 footer #box3 p {
@@ -391,7 +399,27 @@ footer #box3 p {
     margin: 5px;
 }
 
-#image,
+.travel-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.travel-img {
+    width: 20%;
+}
+
+.travel-img img {
+    width: 100%;
+    height: 70px;
+}
+
+.travel-info-text {
+    width: 60%;
+}
+
+
+/* #image,
 #image2 {
     position: relative;
     padding: 10px 0;
@@ -411,7 +439,7 @@ footer #box3 p {
     position: absolute;
     top: 50px;
     left: 80px;
-}
+} */
 
 #black {
     background-color: black;
@@ -466,15 +494,15 @@ img {
     .skills__container {
         margin: 20px auto;
     }
-    footer {
+    /* footer {
         height: 700px;
         padding: 20px 24px;
-    }
+    } */
     footer #box1,
     footer #box2,
     footer #box3 {
         width: 100%;
-        height: 220px;
+        /* height: 220px; */
         padding: 0;
     }
 }
