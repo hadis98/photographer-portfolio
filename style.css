@@ -5,6 +5,38 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+.main-nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav {
+    margin-top: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.main-menu-profile {
+    margin-top: 2rem;
+}
+
+.main-nav-links li {
+    margin-bottom: 0.3rem;
+}
+
+.main-nav-links a {
+    padding: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    display: inline-block;
+    width: 100%;
+}
+
 #container {
     width: 70%;
     margin: 0 auto;
@@ -23,11 +55,11 @@
 
 i {
     color: black;
-    font-size: 24px;
 }
 
 i:hover {
-    color: gray;
+    color: black;
+    background-color: rgb(168, 161, 161);
 }
 
 #menu {
@@ -43,27 +75,12 @@ i:hover {
     position: fixed;
     top: 0;
     left: 3%;
-    /* width: 220px; */
     width: 15%;
     background-color: rgba(128, 128, 128, 0.226);
     height: 100%;
 }
 
-#main-menu p {
-    text-align: center;
-    /* line-height: 40px; */
-}
-
-#main-menu p a {
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-    /* line-height: 40px; */
-    display: block;
-}
-
-#main-menu>p>a:hover {
+#main-menu a:hover {
     background-color: darkgrey;
     color: white;
 }
@@ -71,6 +88,11 @@ i:hover {
 #main-menu img {
     display: block;
     width: 100%;
+}
+
+#main-menu h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
 }
 
 #social {
@@ -386,7 +408,7 @@ img {
     height: 100%;
 }
 
-@media(max-width:1200px) {
+@media(max-width:1300px) {
     #main-menu {
         width: 19%;
     }
