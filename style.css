@@ -373,7 +373,7 @@ img {
     height: 100%;
 }
 
-@media only screen and (max-width:1000px) {
+@media(max-width:1000px) {
     #main-menu,
     #menu {
         display: none;
@@ -408,7 +408,7 @@ img {
     }
 }
 
-@media only screen and (max-width:600px) {
+@media(max-width:600px) {
     table,
     #about #skills,
     .box,
