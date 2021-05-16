@@ -57,11 +57,6 @@ i {
     color: black;
 }
 
-i:hover {
-    color: black;
-    background-color: rgb(168, 161, 161);
-}
-
 #menu {
     position: fixed;
     top: 0;
@@ -80,7 +75,7 @@ i:hover {
     height: 100%;
 }
 
-#main-menu a:hover {
+.main-nav a:hover {
     background-color: darkgrey;
     color: white;
 }
@@ -111,6 +106,11 @@ i:hover {
 
 #social i {
     font-size: 1.3rem;
+}
+
+#social i:hover {
+    color: black;
+    font-weight: bold;
 }
 
 #main-photo {
@@ -175,7 +175,7 @@ h4 {
 }
 
 .about-text {
-    width: 50%;
+    width: 60%;
     text-align: justify;
     margin: 2.5rem auto;
     padding: 1rem;
@@ -190,7 +190,7 @@ h4 {
 }
 
 .skills__container {
-    width: 50%;
+    width: 60%;
     margin: 30px auto;
     text-align: left;
     font-size: large;
@@ -202,28 +202,16 @@ h4 {
     letter-spacing: 3px;
 }
 
-.skills__container button {
+.resumeBtn {
+    cursor: pointer;
     padding: 12px 24px;
-    font-size: large;
+    font-size: 1rem;
     border: 0;
 }
 
-.skills__container button:hover {
+.resumeBtn:hover {
     background-color: darkgray;
 }
-
-
-/* #about #charge {
-    width: 50%;
-    margin: 10px auto;
-    text-align: left;
-    font-size: large;
-    display: flex;
-}
-
-#about #charge div {
-    flex: 1;
-} */
 
 table {
     border: 0px;
@@ -292,11 +280,12 @@ th:hover {
 
 .price-table {
     width: 70%;
+    margin: 0 1rem;
     background-color: darkgrey;
     table-layout: auto;
 }
 
-#last {
+.last-TableColumn {
     background-color: rgb(200, 200, 200);
 }
 
@@ -308,7 +297,7 @@ th:hover {
 #main-contact {
     text-align: center;
     margin: 0 auto;
-    width: 50%;
+    width: 60%;
     text-align: justify;
     background-color: rgb(221, 221, 221);
 }
@@ -366,7 +355,6 @@ footer {
 .box-footer {
     float: left;
     width: 33.333333333%;
-    /* height: 300px; */
     padding: 20px 0;
 }
 
@@ -374,14 +362,7 @@ footer h2 {
     margin: 15px 0;
 }
 
-
-/* 
-footer #box2 img {
-    width: 50px;
-    height: 50px;
-} */
-
-footer #box2>h4 {
+footer #box2 h4 {
     width: 50px;
 }
 
@@ -391,11 +372,18 @@ footer #box2>h4 {
     justify-content: center;
 }
 
-footer #box3 p {
-    display: inline-block;
-    padding: 3px;
-    background-color: rgb(75, 74, 74);
+#box3 a {
     color: white;
+    color: white;
+    width: 100%;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+#box3 p {
+    display: inline-block;
+    padding: 6px;
+    background-color: rgb(75, 74, 74);
     margin: 5px;
 }
 
@@ -418,33 +406,11 @@ footer #box3 p {
     width: 60%;
 }
 
-
-/* #image,
-#image2 {
-    position: relative;
-    padding: 10px 0;
-}
-
-#image>h4,
-#image2>h4 {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 80px;
-}
-
-#image>p,
-#image2>p {
-    display: inline-block;
-    position: absolute;
-    top: 50px;
-    left: 80px;
-} */
-
-#black {
+#createdBy {
     background-color: black;
     text-align: center;
     color: white;
+    padding: 1rem;
 }
 
 .box-first {
@@ -467,6 +433,12 @@ img {
 @media(max-width:1300px) {
     #main-menu {
         width: 19%;
+    }
+    .price-tables {
+        width: 100%;
+    }
+    .price-table {
+        width: 100%;
     }
 }
 
@@ -494,43 +466,49 @@ img {
     .skills__container {
         margin: 20px auto;
     }
-    /* footer {
-        height: 700px;
-        padding: 20px 24px;
-    } */
     footer #box1,
     footer #box2,
     footer #box3 {
         width: 100%;
-        /* height: 220px; */
         padding: 0;
     }
 }
 
 @media(max-width:768px) {
     .skills__container {
-        width: 80% !important;
+        width: 80%;
     }
     .price-tables {
         width: 90%;
     }
+    .price-table {
+        margin: 0;
+    }
 }
 
 @media(max-width:576px) {
-    table,
-    .skills__container,
     .box,
     #about img,
-    .about-text,
     .skills__container button,
     .price-tables {
         width: 100%;
     }
     .about-text,
     .skills__container {
-        padding: 0 10px;
+        width: 90%;
     }
+    .price-table {
+        width: 80%;
+        margin-top: 1rem;
+    }
+    /* .about-text,
+    .skills__container {
+        padding: 0 10px;
+    } */
     #about #charge {
         flex-direction: column;
+    }
+    .resumeBtn {
+        font-size: 1rem;
     }
 }
